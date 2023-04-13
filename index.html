@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    <div class="pomodoro-timer">
+        <div class="center">
+            <div class="custom-slider">
+                <div class="outer">
+                    <div class="fill">
+                        <h1 id="time-left"></h1>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="492px" height="492px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#989898" />
+                            <stop offset="100%" stop-color="#ffff" />
+                        </linearGradient>
+                    </defs>
+
+                    <circle cx="246" cy="246" r="236" stroke-linecap="round" />
+
+                </svg>
+            </div>
+            <button class="play-container hide">
+            
+                <p>Start</p>
+            </button>
+        </div>
+        <div class="right-containers">
+            <div class="option-container">
+                <button id="btn-promodoro">Promodoro</button>
+                <button id="btn-short-break">Short Break</button>
+            </div>
+            <div class="sub-container">
+                <div class="tasks-container">
+                    <!-- <div class="tasks-block">
+                        <img src="/images/delete.svg" alt="delete icon" class="delete-icon">
+                        <p>first tasks here</p>
+                    </div> -->
+                    <!-- <button class="controller-btn">
+                        <img src="/images/play.svg" alt="play icon">
+                    </button> -->
+                </div>
+                <div class="input-container">
+                    <input placeholder="tasks go here...">
+                    <button class="submit-button">ADD</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
